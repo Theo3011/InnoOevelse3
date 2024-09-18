@@ -1,3 +1,4 @@
+// basics import
 import React from "react";
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet } from "react-native";
@@ -7,7 +8,7 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { NavigationContainer } from "@react-navigation/native";
 import Ionicons from "@expo/vector-icons/Ionicons";
 
-// Komponenter for dine skærme
+// Komponenter for skærme
 import CarList from "./components/CarList";
 import CarDetails from "./components/CarDetails";
 import AddEditCar from "./components/Add_edit_Car";
@@ -30,7 +31,7 @@ if (getApps().length < 1) {
   console.log("Firebase On!");
 }
 
-// Opret Stack Navigator
+//Stack Navigator
 const Stack = createStackNavigator();
 const StackNavigation = () => {
   return (
