@@ -1,12 +1,12 @@
 import React from "react";
 import { Text, View } from "react-native";
 
-const FirstComponent = () => {
-  return (
-    <View>
-      <text> en to tre fire</text>
-    </View>
-  );
+const Add_edit_Car = () => {
+    return (
+        <View>
+            <Text>Hello, World!</Text>
+        </View>
+    );
 };
 
-export default FirstComponent;
+export default Add_edit_Car;
