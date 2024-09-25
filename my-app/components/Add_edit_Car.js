@@ -28,16 +28,16 @@ const Add_edit_Car = ({ navigation, route }) => {
   const isEditCar = route.name === "Edit Car";
 
   useEffect(() => {
-    if (isEditCar) {
+    if (isEditCar && route.params && route.params.car) {
       const car = route.params.car[1];
       setNewCar(car);
     }
 
-    // Fjern data, når vi går væk fra screenen
+    // Clean up when we leave the screen
     return () => {
       setNewCar(initialState);
     };
-  }, [isEditCar, route.params.car]);
+  }, [isEditCar, route.params]);
 
   const changeTextInput = (name, event) => {
     setNewCar({ ...newCar, [name]: event });
